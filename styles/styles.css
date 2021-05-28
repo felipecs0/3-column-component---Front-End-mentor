@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  align-items: center;
+  justify-content: center;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  word-spacing: 0.05rem;
+}
+H1 {
+  font-family: "Big Shoulders Display", cursive;
+}
+.card-component {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  width: 15rem;
+  height: 25rem;
+  border-radius: 5px 0 0 5px;
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  width: 15rem;
+  height: 25rem;
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  width: 15rem;
+  height: 25rem;
+  border-radius: 0 5px 5px 0;
+}
+.content-card {
+  margin: 40px;
+}
+.card-icon {
+  margin-bottom: 1rem;
+}
+.description-card {
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+.attribution {
+  color: #000;
+}
+
+@media (max-width: 720px) {
+  .card-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
